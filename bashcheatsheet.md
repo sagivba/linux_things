@@ -7,6 +7,17 @@
 * ```ctrl + f```     - forward one character
 * ```ctrl + b```     - back one character
 
+# Cut/Paste/Delete
+* ```ctrl + u``` - from cursor, delete to start of line
+* ```ctrl + k``` - from cursor, delete to end of line
+* ```ctrl + w``` - from cursor, delete to start of word
+* ```Alt + d```  - from cursor, delete to end of word
+* ```ctrl + d``` - delete character under cursor
+* ```ctrl + h``` - delete character before cursor
+* ```ctrl + y``` - after cursor, paste cut/de­leted text
+~
+
+
 # Command Recall
 * ```ctrl + r``` - search history backward
 * ```ctrl + g``` - escape from history search mode
