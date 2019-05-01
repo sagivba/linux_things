@@ -1,10 +1,41 @@
-Doctomantation from the tab ```Using GPUs``` in the  (Gaussian site)[http://gaussian.com/running/?tabid=5]
+Doctomantation from the tab ```Using GPUs``` in the  [Gaussian site](http://gaussian.com/running/?tabid=5)
 
 ## Create sbatch
 
 ## Using GPU
+### quick example:
+1. Set com file:
+Please note the lines ```%CPU=0-1``` and  ```%GPUCPU=0=0,1```
+look at the next elaborate explaination is 
+```
+%chk=test0246
+#p rhf/3-21g freq test nosymm
+%CPU=0-1
+%GPUCPU=0=0,1
+Gaussian Test Job 246 (Part 1):
+Frequencies in preparation for cartesian opt
 
+0,1
+o 0.0 0.0 0.0
+h 0.0 0.0 0.94
+h 0.887 0.0 -0.31
 
+--Link1--
+%chk=test0246
+%nosave
+#p rhf/3-21g opt=rcfc geom=(check,coord) nosymm test
+
+Gaussian Test Job 246 (Part 2):
+cartesian opt reading in coordinates
+
+0,1
+```
+
+2. create sbatch file to run the job on one of the GPU nodes.
+
+3. run the job
+
+### Explaination from the Gaussian documantation
 The important part of this output is the CPU affinity. This example shows that GPUs 0 and 1 (on the first K80 card) are connected to the CPUs on chip 0 while GPUs 2-7 (on the other two K80 cards) are connected to the CPUs on chip 1.
 
 Specifying GPUs & Control CPUs for a Gaussian Job
