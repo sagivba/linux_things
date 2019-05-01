@@ -1,6 +1,36 @@
 Doctomantation from the tab ```Using GPUs``` in the  [Gaussian site](http://gaussian.com/running/?tabid=5)
 
 ## Create sbatch
+```
+##SBATCH --account=
+##SBATCH --job-name=
+##SBATCH --begin=
+
+##SBATCH --ntasks=
+##SBATCH --ntasks-per-node=
+##SBATCH --cpus-per-task=
+##SBATCH --mem=
+##SBATCH --mem-per-cpu=
+##SBATCH --distribution=
+##SBATCH --tmp=
+##SBATCH --gres=
+
+##SBATCH --chdir=
+##SBATCH --export=
+
+##SBATCH --output=
+##SBATCH --error=
+
+##SBATCH --licenses=
+##SBATCH --profile=
+
+##SBATCH --mail-type=
+##SBATCH --mail-user=
+
+
+ module load Gaussian
+ g16 /your/com/file.com
+ ```
 
 ## Using GPU
 ### quick example:
