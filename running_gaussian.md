@@ -24,7 +24,7 @@ These command state that CPUs 0-31 will be used in the job. GPUs 0 through 5 wil
 
 In the preceding example, the GPU and CPU lists could be expressed more tersely as:
 ```
-%CPU=0-15
+%CPU=0-31
 %GPUCPU=0-5=0-1,16-19
 ```
 Normally one uses consecutive processors in the obvious way, but things can be associated differently in special cases. For example, suppose the same machine already had a job using 6 CPUs, running with %CPU=16-21. Then, in order to use the other 26 CPUs with 6 controlling GPUs, you would specify:
