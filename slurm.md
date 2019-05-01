@@ -70,3 +70,15 @@ Used to signal jobs or job steps that are under the control
 scancel  63041                #  cancel job 63041
 scancel  -u $USER -p worknode #  cancel *my jobs* om partittion 'worknode'
 ```
+
+# sacct 
+Displays accounting data for all jobs and job steps in the Slurm job accounting log or Slurm database
+```
+[sagivba@my ~]$ sacct -j 143922 -o Start,End
+              Start                 End
+------------------- -------------------
+2019-05-01T11:29:07 2019-05-01T11:29:37
+2019-05-01T11:29:07 2019-05-01T11:29:37
+2019-05-01T11:29:07 2019-05-01T11:29:37
+
+```
