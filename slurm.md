@@ -74,7 +74,7 @@ scancel  -u $USER -p worknode #  cancel *my jobs* om partittion 'worknode'
 # sacct 
 Displays accounting data for all jobs and job steps in the Slurm job accounting log or Slurm database
 ```
-[sagivba@my ~]$ sacct -j 143922 -o Start,End
+[sagivba@gate ~]$ sacct -j 143922 -o Start,End
               Start                 End
 ------------------- -------------------
 2019-05-01T11:29:07 2019-05-01T11:29:37
