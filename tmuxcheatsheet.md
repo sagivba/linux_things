@@ -14,8 +14,19 @@
 - ```Ctrl + b "```     - Split pane horizontally
 - ```Ctrl + b q```     - Show pane numbers
 - ```Ctrl + b z```     - Toggle pane zoom
-- ```Ctrl + b q 0-9``` - select pane by number
+- ```Ctrl + b q 0-9``` - Select pane by number
 - ```Ctrl + b Alt ArrowKey```- Change pane size
+
+# Copy mode
+
+- ```Ctrl + b [```     - Enter copy mode
+- ```Ctrl + b PgUp```  - Enter copy mode and scroll one page up
+- ```q``` | ```Esc```  - Exit copy mode
+- ```Ctrl + Space```   - Start marking ( use arrows to mark)
+- ```Ctrl + w```       - Copy
+- ```Ctrl + b ]```     - Paste
+
+
 
 
 
