@@ -13,6 +13,13 @@ worknodes    up   infinite      7  alloc cn[12-14,17-20]
 worknodes    up   infinite     12   idle cn[01-10,15-16]
 gpunodes     up   infinite      4   idle gpu[1-4]
 ```
+# scontrol 
+Use this to see the details of all the nodes you can use
+## scontrol examples:
+```bash
+scontrol show node "nodename"
+scontrol show job 140036
+```
 
 # sbatch
 Submit a batch script to Slurm.
@@ -73,12 +80,14 @@ scancel  -u $USER -p worknode #  cancel *my jobs* om partittion 'worknode'
 
 # sacct 
 Displays accounting data for all jobs and job steps in the Slurm job accounting log or Slurm database
+For example - get statistics on completed jobs by jobID:
 ```
-[sagivba@gate ~]$ sacct -j 143922 -o Start,End
-              Start                 End
-------------------- -------------------
-2019-05-01T11:29:07 2019-05-01T11:29:37
-2019-05-01T11:29:07 2019-05-01T11:29:37
-2019-05-01T11:29:07 2019-05-01T11:29:37
+[sagivba@gate ~]$  sacct -j 143922 -o JobID,JobName,MaxRSS,Elapsed,Start,End
+       JobID    JobName     MaxRSS    Elapsed               Start                 End
+------------ ---------- ---------- ---------- ------------------- -------------------
+143922             wrap              00:00:30 2019-05-01T11:29:07 2019-05-01T11:29:37
+143922.batch      batch      1808K   00:00:30 2019-05-01T11:29:07 2019-05-01T11:29:37
+143922.exte+     extern       348K   00:00:30 2019-05-01T11:29:07 2019-05-01T11:29:37
+
 
 ```
