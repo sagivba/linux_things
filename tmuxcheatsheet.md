@@ -14,8 +14,10 @@
 - ```Ctrl + b "```     - Split pane horizontally
 - ```Ctrl + b q```     - Show pane numbers
 - ```Ctrl + b z```     - Toggle pane zoom
+- ```Ctrl + b x```     - Kill current pane 
 - ```Ctrl + b q 0-9``` - Select pane by number
 - ```Ctrl + b Alt ArrowKey```- Change pane size
+
 
 # Copy mode
 
