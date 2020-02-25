@@ -4,7 +4,8 @@
  2. create python virtual env and activate it in teminal 2
  
  # Package Python Project - in teminal 1
- cd $your_project_directory
+ use: ```cd $your_project_directory```
+ 
  ## run ```python setup.py sdist```
  ```powershell
  PS C:\Users\Sagivba\PycharmProjects\pdb_prep> python setup.py sdist
@@ -79,7 +80,8 @@ Creating tar archive
 removing 'pdb_prep-0.1.0.0' (and everything under it)
 PS C:\Users\Sagivba\PycharmProjects\pdb_prep>
 ```
-### lets find the $gz_file_name : ```dir .\dist``
+### lets find the $gz_file_name 
+use: ```dir $your_project_directory\dist```
 ```powershell
 PS C:\Users\Sagiv\PycharmProjects\pdb_prep> dir .\dist
 
@@ -95,7 +97,7 @@ Mode                LastWriteTime     Length Name
 
 
 ## test the packege - in terminal 2
-use ``pip install $package_path\dist\$gz_name```
+use ``pip install $your_project_directory\dist\$gz_name```
 ```powershell
 (env) PS C:\temp> pip install C:\Users\Sagivba\PycharmProjects\pdb_prep\dist\pdb_prep-0.1.0.0.tar.gz
 Processing c:\users\sagivba\pycharmprojects\pdb_prep\dist\pdb_prep-0.1.0.0.tar.gz
