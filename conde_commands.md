@@ -3,6 +3,7 @@
 2. is central .condarc possible
 3. can I include| source condarc into my .condarc
 4. how to change prompt after source activate to show only the name of the environment and not the path
+5. Installing conda packages 
 
 
 
