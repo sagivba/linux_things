@@ -1,7 +1,8 @@
-# topics for learnning
-how do I know .condarc location
-is centeral .condarc possible
-can I include| source condarc into my .condarc
+# topics for learning
+1.  how do I know .condarc location
+2. is central .condarc possible
+3. can I include| source condarc into my .condarc
+4. how to change prompt after source activate to show only the name of the environment and not the path
 
 
 
