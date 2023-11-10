@@ -47,8 +47,10 @@ conda deactivate
 #### create env and update using the yaml file
 ```bash
 conda create --name cloned_env
+cp original_env.yml cloned_env.yml
+vim cloned_env.yml # :%s/original_env/cloned_env/
 conda activate cloned_env
-conda env update --name root --file original_env.yml
+conda env update --name cloned_env --file original_env.yml
 ```
 
 
