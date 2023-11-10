@@ -1,3 +1,11 @@
+# topics for learnning
+how do I know .condarc location
+is centeral .condarc possible
+can I include| source condarc into my .condarc
+
+
+
+
 ## Initialize conda for shell interaction.
 ```bash
 conda init <shell-name> # e.g., zsh or bash
@@ -52,7 +60,20 @@ cp -r path/of/orig/env location/of/new/env # Copy the directory directly:
 conda activate /my/path/to/conda_venv
 conda deactivate /my/path/to/conda_venv
 ```
+## .condarc
+```yaml
+proxy_servers:
+    http: http://proxy.cslab.openu.ac.il:80
+    https: http://proxy.cslab.openu.ac.il:80
 
+ssl_verify: False
+
+pkgs_dirs:
+ - ~/.conda/pkgs
+
+envs_dirs:
+ - /home/yaffash4/work/conda/envs
+```
 ## adding to jupyter 
 https://janakiev.com/blog/jupyter-virtual-envs/
 
