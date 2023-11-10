@@ -1,6 +1,6 @@
 # topics for learning
 1. Q: how do I know .condarc location
-   A: ```conda config --show-sources```
+   A: ```conda config --show-sources``` 
    also: we can specify a custom location for the `.condarc` file in Conda by setting the `CONDARC` environment variable. 
    ```bash
    export CONDARC=/path/to/your/custom/location/.condarc
