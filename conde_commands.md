@@ -55,3 +55,7 @@ conda deactivate /my/path/to/conda_venv
 
 ## adding to jupyter 
 https://janakiev.com/blog/jupyter-virtual-envs/
+
+## yaml tutorial:
+https://www.cloudbees.com/blog/yaml-tutorial-everything-you-need-get-started
+
